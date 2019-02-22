@@ -49,6 +49,7 @@ a {
     height: 100%;
     margin: 0 auto;
     font-size: 1.7rem;
+    font-family: "lora-regular", serif;
 }
 
 .nav__container a {
@@ -76,6 +77,7 @@ a {
 }
 
 .nav__list a:hover {
+    /* border: 1.5px solid rgba(255, 255, 0, 0.664); */
     background-color: rgba(0, 0, 0, 0.555);
 }
 
@@ -93,31 +95,46 @@ a {
 }
 
 .home__content--greet {
-    font-size: 4rem;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.565;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     color: rgb(252, 252, 23);
+
 }
 .home__content--name {
-    font-size: 10rem;
+    font-family: "poppins-medium", sans-serif;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    line-height: 1.071;
+    /* max-width: 9px; */
+    font-size: 9rem;
 }
 .home__content--job {
-    font-size: 3rem;
+    font-family: "lora-regular", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .btn {
     cursor: pointer;
-    border: .4rem solid rgba(0, 0, 0, 0.6);
+    border: .4rem solid rgba(0, 0, 0, 0.705);
     text-align: center;
     background: transparent ;
     text-transform: uppercase;
     letter-spacing: .25rem;
     color: whitesmoke;
     line-height: 10.5rem ;
-    font-size: 1.5rem;
-    padding: 2rem 2.5rem ;
+    font-size: 1.4rem;
+    padding: 2rem 2.5rem ;    
+    font-family: "poppins-bold", sans-serif;
 }
 
 .btn:hover {
     border-color:  rgba(255, 255, 0, 0.664);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: .2s;
 }
 
