@@ -23,7 +23,7 @@ a {
 .home {
      /* The image used */
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.67)),
-  url("../images/galaxy1.jpg");
+  url("../images/galaxy2.jpg");
 
   /* Full height */
   height: 100%; 
@@ -35,8 +35,10 @@ a {
 }
 
 .nav {
-    height: 5vh;
+    height: 7vh;
+    /* background-color:rgba(0, 0, 0, 0.3); */
 }
+
 
 .nav__container {
     display: flex;
@@ -46,7 +48,18 @@ a {
     max-width: 900px;;
     height: 100%;
     margin: 0 auto;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+}
+
+.nav__container a {
+    padding: 1.2rem;
+    color: pink;
+    text-transform: uppercase;
+}
+
+.nav__container a:hover {
+    color: rgba(255, 255, 0, 0.829);
+    transition: .2s;
 }
 
 .nav__logo {
@@ -55,28 +68,61 @@ a {
 .nav__list {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-grow: 3;
     list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.nav__list a:hover {
+    background-color: rgba(0, 0, 0, 0.555);
 }
 
 .home__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: 93vh;
 }
 
 .home__content {
     text-align: center;
-    color: wheat;
+    color: whitesmoke;
+
 }
 
 .home__content--greet {
     font-size: 4rem;
+    color: rgb(252, 252, 23);
 }
 .home__content--name {
-    font-size: 8rem;
+    font-size: 10rem;
 }
 .home__content--job {
     font-size: 3rem;
+}
+
+.btn {
+    cursor: pointer;
+    border: .4rem solid rgba(0, 0, 0, 0.6);
+    text-align: center;
+    background: transparent ;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    color: whitesmoke;
+    line-height: 10.5rem ;
+    font-size: 1.5rem;
+    padding: 2rem 2.5rem ;
+}
+
+.btn:hover {
+    border-color:  rgba(255, 255, 0, 0.664);
+    transition: .2s;
+}
+
+.fa-chevron-down {
+    color:  #000;
+    font-size: 1.7rem;
+
 }
