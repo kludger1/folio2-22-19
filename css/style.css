@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.home {
+     /* The image used */
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.67)),
+  url("../images/galaxy1.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+    height: 5vh;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 1.9rem;
+}
+
+.nav__logo {
+    flex-grow: 1;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    list-style-type: none;
+}
+
+.home__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.home__content {
+    text-align: center;
+    color: wheat;
+}
+
+.home__content--greet {
+    font-size: 4rem;
+}
+.home__content--name {
+    font-size: 8rem;
+}
+.home__content--job {
+    font-size: 3rem;
+}
