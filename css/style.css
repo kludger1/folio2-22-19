@@ -19,10 +19,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 
 .home {
      /* The image used */
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.67)),
+  background: linear-gradient(to right,  rgba(0, 0, 0, 0.67), transparent, rgba(0, 0, 0, 0.67)),
   url("../images/galaxy2.jpg");
 
   /* Full height */
@@ -66,23 +70,27 @@ a {
 .nav__logo {
     flex-grow: 1;
 }
+/* .nav__logo--img {
+    margin-top: 10rem;
+    width: 10rem;;
+} */
 .nav__list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 3;
-    list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.603);
     height: 100%;
 }
 
-.nav__list a:hover {
+/* .nav__list a:hover { */
     /* border: 1.5px solid rgba(255, 255, 0, 0.664); */
-    background-color: rgba(0, 0, 0, 0.555);
-}
+    /* background-color: rgba(0, 0, 0, 0.555); */
+/* } */
 
 .home__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 93vh;
@@ -91,7 +99,6 @@ a {
 .home__content {
     text-align: center;
     color: whitesmoke;
-
 }
 
 .home__content--greet {
@@ -99,7 +106,6 @@ a {
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    line-height: 1.565;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     color: rgb(252, 252, 23);
 
@@ -116,11 +122,12 @@ a {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    line-height: 4.3rem;
 }
 
 .btn {
     cursor: pointer;
-    border: .4rem solid rgba(0, 0, 0, 0.705);
+    border: .45rem solid rgba(0, 0, 0, 0.705);
     text-align: center;
     background: transparent ;
     text-transform: uppercase;
@@ -128,7 +135,7 @@ a {
     color: whitesmoke;
     line-height: 10.5rem ;
     font-size: 1.4rem;
-    padding: 2rem 2.5rem ;    
+    padding: 2rem 1.9rem 2rem 2.5rem;
     font-family: "poppins-bold", sans-serif;
 }
 
@@ -142,4 +149,26 @@ a {
     color:  #000;
     font-size: 1.7rem;
 
+}
+
+.home__social-list {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    bottom: 7.2rem;
+    position: absolute;
+    
+    
+}
+
+.home__social-list--item a {
+    margin: 0 5rem;
+    color: whitesmoke;
+}
+.home__social-list--item a:hover {
+    color:  rgba(255, 255, 0, 0.664);
+    transition: .2s;
 }
