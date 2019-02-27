@@ -30,17 +30,90 @@ ul {
   url("../images/galaxy2.jpg");
 
   /* Full height */
-  height: 100%; 
-
+height: 100vh;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+/* 
+  display: flex;
+  flex-direction: column; */
+  /* justify-content:space-between; */
 }
 
-.nav {
+.Navbar {
+    background-color: rgba(0, 0, 0, 0.603);
+    
+}
+
+.Navbar__container {
+    /* background-color: red; */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    
+}
+
+.Navbar__Items {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Navbar__Link {
+    font-family: "lora-regular", serif;
+    color: pink;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transition: .2s;
+}
+
+.Navbar__Link:hover {
+    color: rgba(255, 255, 0, 0.829);
+}
+ 
+
+  /* .Navbar__Items--right {
+    margin-left:auto;
+  } */
+  .Navbar__Link-toggle {
+    display: none;
+  }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar__container {
+      flex-direction: column;
+    }
+
+  .Navbar__Items {
+      display:none;
+    }
+
+  /* .Navbar__Items--right {
+      margin-left:0;
+    } */
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }
+/* .nav {
     height: 7vh;
-    /* background-color:rgba(0, 0, 0, 0.3); */
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
 
@@ -70,10 +143,6 @@ ul {
 .nav__logo {
     flex-grow: 1;
 }
-/* .nav__logo--img {
-    margin-top: 10rem;
-    width: 10rem;;
-} */
 .nav__list {
     display: flex;
     justify-content: space-evenly;
@@ -93,7 +162,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    /* height: 93vh; */
 }
 
 .home__content {
@@ -155,11 +224,12 @@ ul {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    width: 50%;
-    margin: 0 auto;
+    /* width: 50%; */
+    /* margin: 0 auto; */
     font-size: 3.5rem;
-    bottom: 7.2rem;
-    position: absolute;
+    /* padding-bottom: 10rem; */
+    /* bottom: 7.2rem; */
+    /* position: absolute; */
     
     
 }
@@ -171,4 +241,15 @@ ul {
 .home__social-list--item a:hover {
     color:  rgba(255, 255, 0, 0.664);
     transition: .2s;
+}
+ 
+
+
+.home__container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: lightblue; */
+    margin-top: 20rem;
+    height: 55%;
 }
