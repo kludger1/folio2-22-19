@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" Home__Content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" Home__Content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <section class="home">
+    <section id="Home">
+
+
+
         <nav class="Navbar">
-            <div class="Navbar__container">
-
-
+            <div class="Navbar__Container">
                 <div>
-                    <a class="Navbar__Link Navbar__Link-brand" href="#">Website title</a>  
+                    <a class="Navbar__Link Navbar__Link-brand" href="#home">Portfolio</a>
                 </div>
 
 
@@ -30,70 +31,44 @@
 
                 <ul class="Navbar__Items">
                     <li>
-                        <a class="Navbar__Link" href="#">About</a> 
+                        <a class="Navbar__Link" href="#About">About</a>
                     </li>
                     <li>
-                        <a class="Navbar__Link" href="#">Skills</a> 
+                        <a class="Navbar__Link" href="#">Skills</a>
                     </li>
                     <li>
-                        <a class="Navbar__Link" href="#">Portfolio</a> 
+                        <a class="Navbar__Link" href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a class="Navbar__Link" href="#">Contact</a> 
+                        <a class="Navbar__Link" href="#">Contact</a>
                     </li>
                 </ul>
-
-
-                <!-- <nav class="Navbar__Items Navbar__Items--right">
-                    <div class="Navbar__Link">
-                        Link
-                    </div>
-                    <div class="Navbar__Link">
-                        Link
-                    </div>
-                </nav> -->
             </div>
-
-
-
         </nav>
-        <!-- <nav class="nav">
-            <div class="nav__container">
-                <div class="nav__logo">
-                    <a href="#">
-                        Logo
-                        <img class="nav__logo--img" src="./images/kl-logo-PNG.png" alt="">
-                    </a>
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__list--item"><a href="#">About</a></li>
-                    <li class="nav__list--item"><a href="#">Skills</a></li>
-                    <li class="nav__list--item"><a href="#">Portfolio</a></li>
-                    <li class="nav__list--item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav> -->
 
-        <!-- <main> -->
-        <div class="home__container2">
-            <div class="home__content">
-                <h5 class="home__content--greet">Hello, World</h5>
-                <h1 class="home__content--name">I'm Katleen Ludger.</h1>
-                <p class="home__content--job"><span>Full Stack Web Developer</span> <span>|</span> <span>Front-End &
+
+
+
+        <div class="Home__Content">
+            <div class="Home__Content__Info">
+                <h5 class="Home__Content__Info-greet">Hello, World</h5>
+                <h1 class="Home__Content__Info-name">I'm Katleen Ludger.</h1>
+                <p class="Home__Content__Info-job"><span>Full Stack Web Developer</span> <span>|</span> <span>Front-End
+                        &
                         Back-End</span></p>
-                <a class="btn" href="#about" title="">More About Me <span><i class="fas fa-chevron-down"></i></span></a>
+                <a class="Home__Content__Info-btn Btn" href="#about" title="">More About Me <span><i
+                            class="fas fa-chevron-down"></i></span></a>
 
 
             </div>
 
-            <ul class="home__social-list">
-                <li class="home__social-list--item"> <a href="#"><i class="fab fa-linkedin"></i></a> </li>
-                <li class="home__social-list--item"> <a href="#"><i class="fab fa-github"></i></a> </li>
-                <li class="home__social-list--item"> <a href="#"><i class="fab fa-instagram"></i></a> </li>
+            <ul class="Home__Content__Social">
+                <li> <a class="Home__Content__Social-item" href="#"><i class="fab fa-linkedin"></i></a> </li>
+                <li> <a class="Home__Content__Social-item" href="#"><i class="fab fa-github"></i></a> </li>
+                <li> <a class="Home__Content__Social-item" href="#"><i class="fab fa-instagram"></i></a> </li>
             </ul>
 
         </div>
-        <!-- </main> -->
 
 
 
@@ -101,23 +76,65 @@
 
 
 
-    <!-- 
-    <main>
 
-        <section>
-            <div class="container">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
 
-                </div>
+    <section id="About">
+        <div class="About__Content">
+            <div class="About__Content-left">
+                <!-- <img class="About__Content-img" src="./images/IMG_0025.JPG" alt=""> -->
+                <img class="About__Content-left-img" src="./images/IMG_0855 (1).JPG" alt="">
             </div>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main> -->
+
+            <div class="About__Content-right">
+                <h1 class="About__Content-right-Header">About Me</h1>
+                <div class="About__Content-right-paragraph-container">
+                    <p class="About__Content-right-paragraph">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <br>
+                    <p class="About__Content-right-paragraph">
+                        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                        mollis
+                        pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                        eleifend
+                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                        dapibus in, viverra quis, feugiat a, tellus.
+                    </p>
+                    <br>
+                    <p class="About__Content-right-paragraph">
+                        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+                        ultricies
+                        nisi
+                        vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
+                        tellus
+                        eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam
+                        quam
+                        nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                        tempus.
+                        Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                        faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                        Sed
+                        consequat, leo eget bibendum sodales, augue velit cursus nunc. </p>
+                </div>
+
+                <ul class="About__Content-right__Btn-container">
+                    <li><a class="About__Content-right__Btn Btn" href="#">Download Resume</a></li>
+                    <li><a class="About__Content-right__Btn Btn" href="#">Hire Me</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- <section></section>
+    <section></section>
+    <section></section> -->
+
     <script src="/js/main.js"></script>
 </body>
 
